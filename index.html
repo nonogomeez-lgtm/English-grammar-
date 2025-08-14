@@ -2,13 +2,37 @@
 <html lang="ar">
 <head>
 <meta charset="utf-8">
+    <!-- Ensure proper scaling and rendering on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>كتاب قواعد اللغة الإنجليزية</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <style>
 body { direction: rtl; font-family: 'Arial', sans-serif; margin-top: 20px; }
 h1, h2, h3 { margin-top: 1.5rem; }
-table { table-layout: fixed; width: 100%; }
 code { background-color: #f8f9fa; padding: 2px 4px; border-radius: 4px; }
+
+/*
+ * Responsive styling
+ *
+ * The additional styles below improve the mobile experience by
+ * making tables horizontally scrollable and ensuring images scale
+ * with the viewport. When viewed on small screens, the table is
+ * displayed as a block with an overflow so users can scroll
+ * horizontally rather than having the layout break. Setting
+ * max-width on images allows them to shrink to fit smaller
+ * devices instead of overflowing the container.
+ */
+table {
+    /* maintain table layout and width while allowing horizontal scroll on small screens */
+    table-layout: fixed;
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
 </style>
 </head>
 <body class="container">
