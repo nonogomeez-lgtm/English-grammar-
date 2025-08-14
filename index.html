@@ -33,6 +33,37 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+/*
+ * Mobile-friendly adjustments
+ *
+ * The rules below refine typography and spacing when the page is viewed
+ * on smaller screens. Larger text sizes and tighter margins help
+ * improve readability on mobile devices. Adjusting the font sizes for
+ * headings ensures they remain distinct without dominating the small
+ * viewport. Tables also receive a slightly smaller font size on
+ * mobile to prevent horizontal overflow.
+ */
+@media (max-width: 576px) {
+    body {
+        font-size: 0.95rem;
+        margin-top: 1rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    h1 {
+        font-size: 1.6rem;
+    }
+    h2 {
+        font-size: 1.4rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+    table {
+        font-size: 0.9rem;
+    }
+}
 </style>
 </head>
 <body class="container">
